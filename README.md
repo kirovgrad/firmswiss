@@ -31,12 +31,11 @@ python firmswiss.py <fsdir> [OPTIONS]
 
 ### Options
 
-| Option | Description | | --- | --- |
-| `-fo`, `--find_origin` |	Find origin binary of function in firmware fs. |
-| `-fb`, `--find_bytes` |	Find specific bytes location in firmware fs binaries. |
-| `-fn`, `--find_needed` |	List required libraries of a binary recursively. |
-| `-fs`, `--find_subfunc` |	Find functions by name substring. |
-| `-fm`, `--find_mnemonic` | Find specific assembler instructions location in fs binaries. |
+* `-fo`, `--find_origin`	Find origin binary of function in firmware fs.
+* `-fb`, `--find_bytes` 	Find specific bytes location in firmware fs binaries.
+* `-fn`, `--find_needed` 	List required libraries of a binary recursively.
+* `-fs`, `--find_subfunc`	Find functions by name substring.
+* `-fm`, `--find_mnemonic`	Find specific assembler instructions location in fs binaries.
 
 
 ## 📦 Examples
