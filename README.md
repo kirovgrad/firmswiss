@@ -10,7 +10,7 @@ A Swiss-army knife CLI tool to search through firmware filesystem directories fo
 
 ---
 
-## 🔧 Features
+## Features
 
 - **Find Origin**: Locate where a specific function is defined in firmware binaries.
 - **Find Bytes**: Search for raw byte patterns (e.g., shellcode, magic numbers).
@@ -20,7 +20,7 @@ A Swiss-army knife CLI tool to search through firmware filesystem directories fo
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ```bash
 python firmswiss.py <fsdir> [OPTIONS]
@@ -38,7 +38,7 @@ python firmswiss.py <fsdir> [OPTIONS]
 * `-fm`, `--find_mnemonic`	Find specific assembler instructions location in fs binaries.
 
 
-## 📦 Examples
+## Examples
 
 ```bash
 # Find a function definition
@@ -57,7 +57,7 @@ python script.py ./firmware -fs init
 python script.py ./firmware -fm "i386:mov eax, 1;sub eax, 1;push eax"
 ```
 
-## 🛠 Requirements
+## Requirements
 
 - Python 3.6+
 - `binascii`
