@@ -52,6 +52,8 @@ class OriginFunctionSearcher:
             for root, _, files in os.walk(self.directory):
                 for filename in files:
                     filepath = os.path.join(root, filename)
+                    if os.path.islink(filepath):
+                        continue
                     executor.submit(self.search_in_file, filepath)
 
     def print_results(self):
@@ -144,6 +146,8 @@ class HexSearcher:
             for root, _, files in os.walk(self.directory):
                 for filename in files:
                     filepath = os.path.join(root, filename)
+                    if os.path.islink(filepath):
+                        continue
                     executor.submit(self.search_in_file, filepath)
 
     def print_results(self):
