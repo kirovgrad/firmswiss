@@ -1,6 +1,6 @@
 # firmswiss
 
-A Swiss-army knife CLI tool to search through firmware filesystem directories for:
+A tool to search through firmware filesystem directories for:
 
 - Function origins
 - Hex byte patterns
