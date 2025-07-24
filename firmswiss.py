@@ -9,11 +9,11 @@ from keystone import *
 from concurrent.futures import ThreadPoolExecutor
 
 def is_elf(path):
-        try:
-            with open(path, "rb") as f:
-                return f.read(4) == b"\x7fELF"
-        except (IOError, OSError):
-            return False
+    try:
+        with open(path, "rb") as f:
+            return f.read(4) == b"\x7fELF"
+    except (IOError, OSError):
+        return False
 
 
 class NeededLibrarySearcher:
